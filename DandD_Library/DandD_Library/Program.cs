@@ -11,7 +11,7 @@ namespace DandD_Library
     {
         static void Main(string[] args)
         { 
-            WeaponFac a = new F
+            //WeaponFac a = new F
         }
     }
 }

@@ -58,10 +58,10 @@ namespace DandD_Library
 
         public Sword(string na, int ra, int ro, int dr)
         {
-            weaponName = na;
-            range = ra;
-            rolls = ro;
-            diceRange = dr;
+            //weaponName = na;
+            //range = ra;
+            //rolls = ro;
+            //diceRange = dr;
         }
 
         public int CalculateAttackBonus()
