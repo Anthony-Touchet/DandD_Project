@@ -10,11 +10,11 @@ namespace DandD_Library
     {
         static void Main(string[] args)
         { 
-<<<<<<< HEAD
+
             
-=======
+
             //WeaponFac a = new F
->>>>>>> d05aeb05723346f212c600d915fbf3bb447085c5
+
         }
     }
 }

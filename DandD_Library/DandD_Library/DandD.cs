@@ -30,16 +30,16 @@ namespace DandD_Library
             charisma = cha;
             proficiencyB = prob;
 
-<<<<<<< HEAD
+
             weapons = new List<Weapon>();
-=======
+
         public Sword(string na, int ra, int ro, int dr)
         {
             //weaponName = na;
             //range = ra;
             //rolls = ro;
             //diceRange = dr;
->>>>>>> d05aeb05723346f212c600d915fbf3bb447085c5
+
         }
 
         void AttributeBonus(int at)
