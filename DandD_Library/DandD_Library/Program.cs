@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Factories;
 
 namespace DandD_Library
 {
@@ -11,7 +10,7 @@ namespace DandD_Library
     {
         static void Main(string[] args)
         { 
-            WeaponFac a = new F
+            
         }
     }
 }
