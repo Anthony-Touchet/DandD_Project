@@ -3,58 +3,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Types;
 
 namespace DandD_Library
-{   
+{
     public class Character
     {
-        public string name;
-        public int strength;
-        public int dexterity;
-        public int constitution;
-        public int intelligence;
-        public int wisdom;
-        public int charisma;
-
-        public int proficiencyB;
-        public List<Weapon> weapons;
-
-        public Character(string na, int st, int dex, int con, int intel, int wis, int cha, int prob)
-        {
-            name = na;
-            strength = st;
-            dexterity = dex;
-            constitution = con;
-            intelligence = intel;
-            wisdom = wis;
-            charisma = cha;
-            proficiencyB = prob;
-
-
-            weapons = new List<Weapon>();
-
-        public Sword(string na, int ra, int ro, int dr)
-        {
-            //weaponName = na;
-            //range = ra;
-            //rolls = ro;
-            //diceRange = dr;
-
-        }
-
-        void AttributeBonus(int at)
-        {
-            float extra = at - 10;
-
-            
-
-        }
+        JobandRace jobRace;
     }
 
-    public class Weapon
+    public class Ability
     {
-        public string name;
-        public int attackbounus;
+        string name;        //What is the name of this ability
+        string description; //What does this ability do?
+        int cost;           //What does this ability cost
+        int level;          //What level is this ability
+        int range;          //How far can this ability reach?
     }
+   
+    public class JobandRace
+    {
+        //Race
+        public string race;        //Primary race
+        public string subrace;     //
+        public int speed;          //How fast this character can move
+        public int size;           //Size will be in feet
+        public string alignment;   //How Does this character generally act
+        public int age;            //How old is this character
+        public List<Attribue> attribueIncreases;    //What attributes does this race increase
 
+        //Job
+        public int hitDiceRange;            //Range for the Hit Die
+        public int hitPointsBonus;          //Hit point bonus for Job
+        public string description;          //Description on Job
+        public Attribue primaryAbility;     //The Primary Attribue for this Job
+        public List<Attribue> savingThrows; //What attribues govern the saving throws for this class
+        public List<Ability> abilities;     //What abilities does this class have
+        public List<Armor> armorProficent;  //What kinds of armor is this job proficent at.
+        //Method or Property to return profeicent Weapons.     //What Weapons is this class profesient in?
+        public Tools toolProficent;         //What tools is this class profeicent in
+    }
 }
